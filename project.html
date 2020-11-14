@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #CC66CC;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: #D3D3D3;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #FFFFFO;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #CC66CC;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h2>Історія фемінізму</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="fem1.html">Протофемінізм</a></li>
+      <li><a href="fem2.html">"Перша хвиля"</a></li>
+      <li><a href="fem3.html">"Друга хвиля"</a></li>
+	  <li><a href="fem4.html">"Третя хвиля"</a></li>
+    </ul>
+  </nav>
+  
+  <article>
+    <h1>Вступ. Пояснення періодизації.</h1>
+    <p>Історія фемінізму (переважно західного) починається з суфражизму і традиційно поділяється на три (іноді чотири) "хвилі" - періоди з характерними темами 
+	та завданнями у виборюванні гендерної рівності, кожен з яких нашаровувався на здобутки попереднього, поєднуючись із ними.</p>
+	<p>Хоча феміністичні рухи були і є зосереджені переважно на правах жінок, деякі феміністки виступають за включення чоловіків до свого руху, 
+	оскільки патріархатна організація суспільства і гендерні стереотипи та традиційні гендерні ролі, на їх думку, наносять шкоду також і чоловікам.</p>
+	<p>Історія західного жіночого руху поділяється включає протофемінізм, три "хвилі" та четверту або пост-фемінізм. Одним із перших текстів, 
+	що містять твердження про рівність чоловіків і жінок в контексті релігії, є Тхеригатха (частина палійського канону в буддизмі). 
+	Феміністичні ідеї висловлючали чи не всі відомі жінки протягом людської історії (як титуловані, так і відомі своєю роботою мисткині, 
+	науковиці, соціальні реформаторки, активістки).</p>
+  </article>
+</section>
+
+<footer>
+  <p>Добрянський Денис, учень 11-Б класу, 2020 р.</p>
+</footer>
+
+</body>
+</html>

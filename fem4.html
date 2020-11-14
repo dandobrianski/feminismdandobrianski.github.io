@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.leftimg {
+    float:left; /* Выравнивание по левому краю */
+    margin: 7px 7px 7px 0; /* Отступы вокруг картинки */
+   }
+   .rightimg {
+    float: right; /* Выравнивание по правому краю */ 
+    margin: 7px 0 7px 7px; /* Отступы вокруг картинки */
+   }
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #CC66CC;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: #D3D3D3;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #FFFFFO;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h2>"Третя хвиля"</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="project.html">Історія фемінізму</a></li>
+      <li><a href="fem1.html">Протофемінізм</a></li>
+      <li><a href="fem2.html">"Перша хвиля"</a></li>
+      <li><a href="fem3.html">"Друга хвиля"</a></li>
+	  <li><a href="fem4.html">"Третя хвиля"</a></li>
+    </ul>
+  </nav>
+  
+  <article>
+  <p class="fig"><img src="https://coollib.com/sites/default/files/Elis_Uoker.jpg" alt="Еліс Вокер" class="leftimg"></p>
+    <p>Третя хвиля – від дев’яностих і до сьогодні – те, що якраз і називають сучасним фемінізмом, – боротьба не тільки за остаточне зрівняння прав чоловіків та жінок, 
+	а й за знищення гендерних стереотипів, припинення практик, що калічать (наприклад, жіноче обрізання), вільний доступ усіх дівчат та жінок до гігієнічних засобів 
+	(у багатьох регіонах досі не знають, що таке прокладки й тампони), знищення патріархального ладу та відхід від «традиційної родини», де жінка є безправною 
+	(у деяких країнах досі є традицією договірні шлюби, коли батьки підбирають доньці нареченого, вона не має права працювати і може залишитися на вулиці 
+	без речей у будь-який момент). </p>
+	<p>Представниці третьої хвилі також зосереджують увагу й на інших проблемах: сексизмі та об’єктивації жіночого тіла, наявності «скляної стелі» навіть у 
+	розвинених країнах, різних стандартів краси для чоловіків і жінок. Не забувають і про загальнолюдські проблеми, з якими теж борються: расизм, сексизм, 
+	ті ж токсичні гендерні стереотипи та нав’язування певних гендерних ролей, гомофобія, соціальна нерівність тощо.</p>
+	<p>Характерними рисами фемінізму третьої хвилі є включення компонентів квір-теорії, антирасизму та інтернаціоналізму і дестигматизація жіночої сексуальності. 
+	Крім того, ставлення до порнографії як до одного з способів експлуатації жінок, характерне для "другої хвилі", замінюється на роздрібнені, в тому числі протилежні 
+	точки зору. Персоналії: Еліс Вокер, Лілі Тейлор, Наомі Вульф ("Міф про красу").</p>
+	<p>Ключова тема для феміністок третьої хвилі — усвідомлення, що насправді питання не зводиться до того, що є жінки, а є чоловіки. Питання зводиться до спроби зрозуміти, 
+	як саме ці гендерні ролі, чоловіча і жіноча, конструюються, як ми стаємо чоловіками і жінками. Що змушує нас бути чоловіком чи жінкою? Тут виникає питання про те, 
+	що можуть існувати й інші гендерні ролі. Дослідженням множини гендерних ідентичностей займається квір-теорія.</p>
+	<p>В третій хвилі особливо вирізняється рух Riot Grrrl, вибудуваний навколо естетики не лише звільненої, а й наділеної владою жінки, яка здатна бути самодостатньою, 
+	талановитою, лідером в соціальному світі — і в цьому сенсі перевершує чоловіків. Riot Grrrl заявили, що push-up bra не суперечить наявності brains, і повернули в ужиток 
+	агресивний макіяж та високі підбори, які ще недавно вважались класичним символом гніту з боку чоловіка.</p>
+	<p>Це феміністський рух, що виник в инди- / панк-року 1990-х років, що знайшло своє вираження з одного боку - в грубому, жорсткому, як правило, на аматорському рівні 
+	спрацювали панк-року, з іншого - в політичній активності, на деякий час перетворила рок-жанр на впливову субкультуру. Багато (хоч і не всі) riot-grrrl-виконавиці основну 
+	увагу приділяли темам, так чи інакше пов'язаних із взаємовідносинами підлог (згвалтування, насильство в сім'ї, одностатева любов), розглядаючи їх з радикальних позицій. 
+	Спочатку лідери руху поставили себе поза великим музичного бізнесу і відмежувалися від будь-яких корпоративних інтересів: велика частина riot-grrrl-релізів вийшла на лейблі 
+	з промовистою назвою Kill Rock Stars.</p>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/biQjt32zv1E" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/iI28IrXGeOc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/57EW8AElyVU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </article>
+</section>
+
+</body>
+</html>

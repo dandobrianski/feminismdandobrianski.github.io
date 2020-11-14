@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.leftimg {
+    float:left; /* Выравнивание по левому краю */
+    margin: 7px 7px 7px 0; /* Отступы вокруг картинки */
+   }
+   .rightimg {
+    float: right; /* Выравнивание по правому краю */ 
+    margin: 7px 0 7px 7px; /* Отступы вокруг картинки */
+   }
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #CC66CC;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: #D3D3D3;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #FFFFFO;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h2>"Перша хвиля"</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="project.html">Історія фемінізму</a></li>
+      <li><a href="fem1.html">Протофемінізм</a></li>
+      <li><a href="fem2.html">"Перша хвиля"</a></li>
+      <li><a href="fem3.html">"Друга хвиля"</a></li>
+	  <li><a href="fem4.html">"Третя хвиля"</a></li>
+    </ul>
+  </nav>
+  
+  <article>
+  <p class="fig"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Emmeline_Pankhurst%2C_seated_%281913%29.jpg/409px-Emmeline_Pankhurst%2C_seated_%281913%29.jpg" alt="Еммелін Панкгерст" class="leftimg"></p>
+    <p>Початком організованого руху вважається 1848, коли у м. Сенека-Фоллз (штат Нью-Йорк) жінки провели з'їзд на захист своїх прав під гаслом 
+	"Всі жінки та чоловіки створені рівними", де прийняли «Декларацію переконань» авторства Елізабет Кеді Стентон та Лукреції Мотт з вимогами 
+	рівноправ'я у правах власності, шлюбу, вільного вибору професії, отримання повноцінної освіти тощо.</p>
+	<p>В 1869 році Джон Стюарт Мілль опублікував працю "Підпорядкування жінок", в якій відзначив, що "підтримка законом підпорядкування одної 
+	статі іншій шкідлива... і є одною з перешкод на шляху до загальнолюдського удосконалення".</p>
+	<p>Питання про право власності для жінок займало велике місце в західному фемінізмі, оскільки принцип покровительства англійського загального 
+	права і законодавство Франції позбавляли одружену жінку правоздатності, в тому числі всіх прав власності. В 1860, після звертання Елізабет Стентон, 
+	Законодавчі збори Нью-Йорка прийняли в якості закону "Акт про власність одружених жінок", що гарантував жінці право залишати за собою зароблене нею, 
+	рівне з чоловіком право на спільну опіку над дітьми і право власності вдови, відповідне до прав чоловіка у випадку смерті жінки.</p>
+	<p>Важливою фігурою фемінізму другої половини XIX ст. є Еммелін Панкгерст, одна з засновниць суфражизму, ціллю якої було викорінення сексизму, 
+	закріпленого на всіх рівнях британського суспільства. в 1903 році Панкгерст сформувала "Організацію з захисту суспільних і політичних прав жінок" 
+	(Women's Social and Political Union), яка впродовж року об'єднала 5 тис. членкинь.</p>
+	<p>Після того як учасниць організації почали арештовувати, багато з них зважились на протест голодуванням. Це привернуло увагу до жорстокості 
+	законодавчої системи того часу і до ідей фемінізму. В 1984 англійський парламент прийняв ряд законів, спрямованих на покращення становища жінок, 
+	і надав їм право голосу на місцевих виборах.</p>
+	<p>В США в 1869 році створено дві організації, в 1890 об'єднані в "Національну американську асоціацію за жіноче виборче право". 
+	Завдяки її активності в ряді американських штатів жінок допустили до голосування.</p>
+	<p>На початку 1920-х в Вашингтоні діяв "Антифлірт-клуб", метою якого був захист жінок від сексуальних домагань з боку чоловіків.</p>
+  </article>
+</section>
+
+</body>
+</html>
